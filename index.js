@@ -28,7 +28,7 @@ app.get("/", function (req, res) {
 });
 
 app.post("/addItem", function (req, res) {
-  todos.push(req.body.todo);
+  document.querySelector('ul').push(req.body.todo);
   res.redirect('/');
 })
 
