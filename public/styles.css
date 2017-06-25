@@ -1,0 +1,18 @@
+html {
+   width: 100vw;
+   min-height: 100%;
+}
+
+body{
+   width: 100vw;
+   font-family: sans-serif;
+   display: flex;
+   flex-flow: wrap row;
+   justify-content: center;
+}
+
+
+ul {
+   list-style-type: none;
+   padding-left: 0;
+}
