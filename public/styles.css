@@ -16,3 +16,7 @@ ul {
    list-style-type: none;
    padding-left: 0;
 }
+
+input:checked {
+   text-decoration: line-through;
+}

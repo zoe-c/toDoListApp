@@ -14,16 +14,24 @@
           <h1>TO DO</h1>
           <p>Let's make it happen!</p>
           <form id= "toDoList" action="/" method="post">
-            <input type="text" name="text" placeholder="What to add?"/>
+            <input type="text" name="task" placeholder="What to add?"/>
             <button type="submit" value="Submit">SUBMIT</button>
           </form>
 
          <!--you place the varName around the li, not the ul, because mustache will render each like .map would.  -->
            <ul class="toDo">
               {{#toDo}}
-              <li><input type="checkbox"> {{task}} </li>
+              <li><input type="checkbox" class="task"> {{task}} </li>
               {{/toDo}}
            </ul>
+
+           <!-- {{#toDo}}
+           <ul class="toDo">
+             {{#task}}
+             <li><input type="checkbox"> {{text}}</li>
+             {{/task}}
+          </ul>
+          {{/toDo}} -->
 
 
           <!-- <ul class="completedTasks">
